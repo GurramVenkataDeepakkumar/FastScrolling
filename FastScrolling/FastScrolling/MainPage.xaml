@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="FastScrolling.MainPage">
+
+    <ListView x:Name="TestListView" android:ListView.IsFastScrollEnabled="False">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Label Text="{Binding .}" FontSize="Large"/>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
